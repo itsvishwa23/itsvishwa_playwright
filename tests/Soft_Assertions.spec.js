@@ -10,5 +10,6 @@ test("Soft Assertions", async ({ page }) => {
     await expect.soft(page).toHaveTitle('Vishwanath')
     await expect(page).toHaveURL('https://demoblaze.com/index.html')
     await expect(page.locator(cat_div)).toBeVisible();
+
     await page.close();
 });
