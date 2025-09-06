@@ -8,5 +8,8 @@ test("Locating Elements", async ({ page }) => {
   for (const el of element) {
     const title = await el.textContent();
     console.log("Title:", title);
+    const test = await page.getByPlaceholder("name@example.com");
+    await expect(test).toBeVisible();
+
   }
 });
