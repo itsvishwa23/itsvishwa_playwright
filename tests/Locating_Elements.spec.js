@@ -15,5 +15,4 @@ test("Locating Elements", async ({ page }) => {
   await page.locator(password_input_box).fill("itsvishwa23");
   await page.locator(login_button).click();
   await expect(page.locator(logout)).toBeVisible();
-  //   await page.locator("id=login2").click();
 });
