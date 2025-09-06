@@ -1,9 +1,11 @@
 import { test, expect } from "@playwright/test";
 
-test("has title", async ({ page }) => {
+test("Assertions", async ({ page }) => {
   
-    await page.goto("https://www.google.com/");
- 
-    
-  await page.close();
+    await page.goto("https://demoblaze.com/index.html");
+    const login='//a[@id="login2"]';
+
+    await expect(page.locator(login)).toBeVisible();
+
+    await page.close();
 });
