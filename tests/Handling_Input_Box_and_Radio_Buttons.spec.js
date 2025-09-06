@@ -27,6 +27,8 @@ test("Handling Input Box and Radio Button", async ({ page }) => {
 
     // Select the radio button
     await page.getByLabel('Male',{exact:true}).check();
+
+    
         
     await page.close();
 });
